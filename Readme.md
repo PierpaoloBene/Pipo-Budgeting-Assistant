@@ -17,3 +17,4 @@ It is not possible to directly leverage openbaking APISs, so Pipo must rely on a
 **Findings:**
 * **GoCardless (formerly Nordigen):** Option that i'm investigating rn. 
 * **Plaid:** Next to be studied
+* `Aggiungere qui altre alternative`
