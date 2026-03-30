@@ -18,3 +18,7 @@ It is not possible to directly leverage openbaking APISs, so Pipo must rely on a
 * **GoCardless (formerly Nordigen):** Option that i'm investigating rn. 
 * **Plaid:** Next to be studied
 * `Aggiungere qui altre alternative`
+
+Link utili:
+ - [What is an api in open banklng](https://gocardless.com/guides/posts/what-is-an-api-in-open-banking/)
+ - [I just found this awesome EU Banking API for personal use](https://dev.to/jerzakm/i-just-found-this-awesome-eu-banking-api-for-personal-use-113a)
