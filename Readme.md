@@ -19,14 +19,20 @@ Managing personal finances shouldn't be a manual, tedious task. Pipo automates t
 * **Budget Forecasting:** Predictive analytics to warn users before they overspend in specific categories.
 * **Privacy-First:** Designed to keep sensitive financial data secure, processing ML insights locally where possible.
 
-## 🏗️ Architecture & Tech Stack
+## 🏦 Open Banking Integration & PSD2 Compliance
 
-*(Note: Update this section based on your specific technology choices)*
+**Pipo Automatic Budgeting Assistant** leverages Open Banking APIs to securely fetch real-time financial data. This integration is strictly compliant with the European **PSD2 (Payment Services Directive 2)**, ensuring the highest standards of data security and user privacy.
 
-* **Language:** Python / Node.js
-* **Data Ingestion:** [Insert Open Banking Provider, e.g., Plaid, Tink, Truelayer] API
-* **Machine Learning:** Scikit-learn / TensorFlow / PyTorch
-* **Data Storage:** SQLite / PostgreSQL / Pandas DataFrames (for local processing)
+### How It Works:
+
+Our architecture relies on a secure, token-based flow mediated by an authorized Account Information Service Provider (AISP):
+
+1. **User Consent & OAuth2:** The user explicitly grants Pipo read-only access to their bank account. Pipo initiates a secure OAuth2 flow.
+2. **Strong Customer Authentication (SCA):** The user is redirected to their own bank's official portal or app to authenticate (e.g., via biometrics or OTP). **Pipo never sees, intercepts, or stores the user's banking credentials (username/password).**
+3. **Encrypted Token Exchange:** Once the user authorizes the connection, the bank issues a secure, time-limited, and revocable access token to the AISP.
+4. **Data Retrieval:** Pipo uses this token to securely retrieve raw transaction data and account balances. The data is then processed through our normalization and categorization algorithms to generate automated budgeting insights.
+
+**Official Resource:** For more detailed information on the regulatory framework ensuring the security of this process, please refer to the [Official European Commission documentation on the Payment Services Directive (PSD2)](https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services_en).
 
 ## 🔒 Security & PSD2 Compliance
 
