@@ -1,4 +1,4 @@
-# Pipo Automatic Budgeting Assistant 💸🤖
+# Pipo Automatic Budgeting Assistant
 
 Pipo aims to become an intelligent, automated personal finance assistant designed to help users seamlessly track, categorize, and optimize their daily expenses. By leveraging Open Banking APIs and Machine Learning, Pipo transforms raw transactional data into actionable financial insights.
 
